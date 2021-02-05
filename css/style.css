@@ -1,0 +1,24 @@
+/* Variables*/
+:root {
+    --basic-black:#000000;
+    --basic-white:#ffffff;
+    background: #333333;
+    background: #23A9E1;
+    background: #81B3D3;
+    background: #DC6243;
+    background: #333333;
+    background: #81B3D2;
+    background: #EEEEEE;
+    background: #766357;
+    background: #231F20;
+    background: #F4B1A4;
+    background: #491213;
+}
+/*Global*/
+
+body {
+    font-family: PT sans;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
