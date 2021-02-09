@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
     <link href="normalize.css" rel="stylesheet">
@@ -30,19 +30,25 @@
     <main>
         <h1>Выбор гостиницы</h1>
         <section>
-        <h2>Критерии для выбора гостиницы</h2>
+            <h2> Фильтр для выбора гостиницы</h2>
         </section>
         <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
-              <legend>Цена за сутки, <span>₽</span></legend>
-              <label><input type="text" value="от 0"></label>
-              <label><input type="text" value="до 5000"></label>
-              <ul>
-              </ul>
+                <legend>ИНФРАСТУКТУРА:</legend>
+                <label><input type="checkbox" name="area" checked value="БАССЕЙН">БАССЕЙН</label>
+                <label><input type="checkbox" name="area" value="ПАРКОВКА">ПАРКОВКА</label>
+                <input type="checkbox" name="area" value="WI-FI">WI-FI</label>
+                <legend>ТИП ЖИЛЬЯ:</legend>
+                <label><input type="checkbox" name="area" checked value="ГОСТИНИЦА">ГОСТИНИЦА</label>
+                <label><input type="checkbox" name="area" checked value="МОТЕЛЬ">МОТЕЛЬ</label>
+                <label><input type="checkbox" name="area" checked value="АПАРТАМЕНТЫ">АПАРТАМЕНТЫ</label>
+                <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+                <label><input type="text" value="от 0"></label>
+                <label><input type="text" value="до 5000"></label>
             </fieldset>
             </fieldset>
             <button type="submit">Показать</button>
-          </form>
+        </form>
         <div>
             <!--здесь будет форма-->
         </div>
@@ -96,7 +102,7 @@
             <a href="tel+74956660166">+7 (495)666-01-66</a>
         </section>
         <section>
-            <h2>Давйте дружить</h2>
+            <h2>Давайте дружить</h2>
             <ul>
                 <li>
                     <a href="#">Твиттер</a>
