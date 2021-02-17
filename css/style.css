@@ -14,11 +14,34 @@
     background: #F4B1A4;
     background: #491213;
 }
-/*Global*/
 
-body {
+.page-body {
+    min-width: 1200px;
+    padding: 0;
+    margin: 0;
     font-family: PT sans;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+    color: #ffffff;
+    background-color: #ffffff;
+    background-image: url("../img/mountain-view.jpg");
+    text-transform: uppercase;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.main-navigation{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+}
+.site-navigation{
+    list-style: none;
 }

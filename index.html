@@ -15,7 +15,7 @@
 </head>
 
 <body class="page-body">
-  <header class="man-header">
+  <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo.svg" width="138" height="70" alt="Логотип городка Седоны">
@@ -30,49 +30,49 @@
   </header>
   <main class="container">
     <h1>SEDONA</h1>
-    <img src="img/welcome-to-the-sedona.svg" width="457" height="351" alt="Добро пожаловать в Седону" < section
-      class="dignities">
-    <h2>Достоинства</h2>
-    <ul class="dignities-list">
-      <li class="dignities-item">
-        <h3>Настоящий городок №1</h3>
-        <p>Седона-не аттракцион для туристов,там течет своя жизнь</p>
-        <img src="img/view-of-the-building.jpg" width="800" height="256" alt="Фото здания">
-        <ul class="dignities-list">
-          <li class="dignities-item">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="dignities-item">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="dignities-item">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного
-              производства!</p>
-          </li>
-        </ul>
-      </li>
-      <li class="dignities-item">
-        <h3>Там есть<br>
-          мост дьявола № 2</h3>
-        <p>Да,по нему можно пройти,если вы осмелитесь</p>
-        <img src="img/devils-bridge.jpg" width="800" height="256" alt="Мост дьявола">
-      </li>
-      <li class="dignities-item">
-        <h3>Небольшая площадь № 3</h3>
-        <p>Все достопримечательности находяться очень близко</p>
-      </li>
-      <li class="dignities-item">
-        <h3>Красивая дорога № 4</h3>
-        <p>Ехать в Седону с Лас Вегаса совсем нескучно</p>
-      </li>
-      <li class="dignities-item">
-        <h3>Мало туристов № 5</h3>
-        <p>Большинство едет в гранд каньон и толпится там</p>
-      </li>
-    </ul>
+    <section class="dignities">
+      <img src="img/welcome-to-the-sedona.svg" width="457" height="351" alt="Добро пожаловать в Седону">
+      <h2>Достоинства</h2>
+      <ul class="dignities-list">
+        <li class="dignities-item">
+          <h3>Настоящий городок №1</h3>
+          <p>Седона-не аттракцион для туристов,там течет своя жизнь</p>
+          <img src="img/view-of-the-building.jpg" width="800" height="256" alt="Фото здания">
+          <ul class="dignities-list">
+            <li class="dignities-item">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="dignities-item">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="dignities-item">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного
+                производства!</p>
+            </li>
+          </ul>
+        </li>
+        <li class="dignities-item">
+          <h3>Там есть<br>
+            мост дьявола № 2</h3>
+          <p>Да,по нему можно пройти,если вы осмелитесь</p>
+          <img src="img/devils-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+        </li>
+        <li class="dignities-item">
+          <h3>Небольшая площадь № 3</h3>
+          <p>Все достопримечательности находяться очень близко</p>
+        </li>
+        <li class="dignities-item">
+          <h3>Красивая дорога № 4</h3>
+          <p>Ехать в Седону с Лас Вегаса совсем нескучно</p>
+        </li>
+        <li class="dignities-item">
+          <h3>Мало туристов № 5</h3>
+          <p>Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
     </section>
     <section class="interested in">
       <h2>Заинтересовались?</h2>
@@ -80,26 +80,26 @@
         мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <img src="img/map-of-sedona.png" width="1199" height="594" alt="Город Седона на карте">
       <p>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label>Дата заезда:</label>
-          <input type="date" value="24.04.2017">
+      <form class="hotel search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="hotel search-item">
+          <label="hotel search-arrival date">Дата заезда:</label>
+          <input="hotel search-arrival date"> type="date" value="24.04.2017">
         </p>
-        <p>
-          <label>Дата выезда:</label>
-          <input type="date" value="04.07.2017">
+        <p class="hotel search-item">
+          <label="hotel search-date of departure>Дата выезда:</label>
+          <input="hotel search-date of departure"> type="date" value="04.07.2017">
         </p>
-        <p>
-          <label>Взрослые:</label>
-          <button type="submit">-</button>
+        <p class="hotel search-item">
+          <label="number of people-adults">Взрослые:</label>
+          <button class="button" type="submit">-</button>
           <input type="number">
-          <button type="submit">+</button>
-          <label>Дети:</label>
-          <button type="submit">-</button>
+          <button class="button" type="submit">+</button>
+          <label="number of people-children">Дети:</label>
+          <button class="button" type="submit">-</button>
           <input type="number">
-          <button type="submit">+</button>
+          <button class="button" type="submit">+</button>
         </p>
-        <button type="submit">Найти</button>
+        <button clacc="button" type="submit">Найти</button>
     </section>
     </section>
   </main>
