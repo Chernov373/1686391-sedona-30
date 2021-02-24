@@ -2,33 +2,31 @@
 :root {
     --basic-black:#000000;
     --basic-white:#ffffff;
-    color: #333333;
-    color: #23A9E1;
-    color: #81B3D3;
-    color: #DC6243;
-    color: #333333;
-    color: #81b3d2;
-    color: #EEEEEE;
-    color: #766357;
-    color: #231F20;
-    color: #F4B1A4;
-    color: #491213;
+    --dark-grey: #3b3a3a;
+    --basic-blue: #23a9e1;
+    --blue: #81B3D3;
+    --carrot: #DC6243;
+    --grey: #333333;
+    --light-blue: #81b3d2;
+    --ultra-white: #EEEEEE;
+    --light-grey: #766357;
 }
 
-.page-body {
+body {
     min-width: 1200px;
     padding: 0;
     margin: 0;
-    font-family: PT sans;
+    font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 400;
-    color: #ffffff;
-    background-color: #ffffff;
+    font-weight: 700;
+    color: var(--basic-white);
+    background-color: var(--basic-black);
     background-image: url("../img/mountain-view.jpg");
     text-transform: uppercase;
     background-position: top center;
     background-repeat: no-repeat;
+
 }
 a{
     text-decoration: none;
@@ -41,7 +39,40 @@ img{
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
+    color:#000000;
+    background-color: #ffffff;
 }
 .site-navigation{
     list-style: none;
 }
+.site-navigation-current a:not([href]) {
+    background-color: var(--basic-black);
+  }
+  
+  /* User navigation */
+  
+  
+  .site-navigation a,
+  .user-navigation a {
+    color: var(--basic-white);
+  }
+  
+  .site-navigation a:hover,
+  .site-navigation a:focus,
+  .user-navigation a:hover,
+  .user-navigation a:focus {
+    background-color: var(--basic-extra-dark);
+  }
+  .dignities {
+    list-style: none;
+  }
+  
+  .advantages-item {
+    text-align: center;
+  }
+  
+  .advantages-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+   font-weight: 700; 
+  }
