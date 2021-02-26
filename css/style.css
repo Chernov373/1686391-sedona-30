@@ -7,7 +7,7 @@
     --blue: #81B3D3;
     --carrot: #DC6243;
     --grey: #333333;
-    --light-blue: #81b3d2;
+    --backgrouund-color-light-blue: #81b3d2;
     --ultra-white: #EEEEEE;
     --light-grey: #766357;
 }
@@ -16,12 +16,12 @@ body {
     min-width: 1200px;
     padding: 0;
     margin: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
     color: var(--basic-white);
-    background-color: var(--basic-black);
+    background-color: var(--basic-blac);
     background-image: url("../img/mountain-view.jpg");
     text-transform: uppercase;
     background-position: top center;
@@ -54,7 +54,7 @@ img{
   
   .site-navigation a,
   .user-navigation a {
-    color: var(--basic-white);
+    color: var(--basic-black);
   }
   
   .site-navigation a:hover,
@@ -63,16 +63,78 @@ img{
   .user-navigation a:focus {
     background-color: var(--basic-extra-dark);
   }
-  .dignities {
+  .dignities-list {
     list-style: none;
   }
-  
-  .advantages-item {
-    text-align: center;
-  }
-  
-  .advantages-item h3 {
+  .dignities-item h3{
     font-size: 21px;
     line-height: 21px;
-   font-weight: 700; 
+    font-weight: bold;
+    color:#ffffff;
   }
+  .dignities-list h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color:#000000;
+    background-image:url(img/rectangle.png);
+    background-color:#81b3d2;
+  }
+  .dignities-item p{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: regular;
+    color:#333333;
+  }
+  .dignities-list {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color:var(--basic-black);
+  }
+  .advantages-list{
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+  }
+  .advantages-item h3{
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color:var(--basic-black);
+  }
+  .advantages-item p{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: regular;
+  }
+  /* contacts */
+  .contacts-phohe {
+    color:inherit;
+  }
+  /*main footer*/
+  .main-footer{
+    color:var(--basic-white);
+    background-color: var(--basic-black);
+    background-image: url(img/logo-htmlacademy.svg);
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+  .footer-contacts a{
+    color:var(--basic-white);
+    text-decoration: underline;
+  }
+  .interested  input{
+    font: PT sans;
+    background-color: transparent;
+    border: 2px solid var(--basic --basic-white);
+  }
+  .interested  p{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color:#000000;
+  }
+interested  input:focus{
+  border-color: #000000;
+}

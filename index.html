@@ -9,9 +9,9 @@
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -74,33 +74,32 @@
         </li>
       </ul>
     </section>
-    <section class="interested in">
+    <section class="interested">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br>
         мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <img src="img/map-of-sedona.png" width="1199" height="594" alt="Город Седона на карте">
       <p>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</p>
-      <form class="intersted in-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="interested in-item">
-          <label="interested in-arrival date">Дата заезда:</label>
-          <input="interested in-arrival date"> type="date" value="24.04.2017">
+      <form class="intersted-form"></form> action="https://echo.htmlacademy.ru" method="post">
+        <p class="interested-item">
+          <label class="interested-arrival date">Дата заезда:</label>
+          <input class="interested-arrival date" type="text" value="24 апреля 2017">
         </p>
-        <p class="interested in-item">
-          <label="interested in-date of departure>Дата выезда:</label>
-          <input="interested in-date of departure"> type="date" value="04.07.2017">
+        <p class="interested-item">
+          <label class="interested-date of departure">Дата выезда:</label>
+          <input class="interested-date of departure" type="text" value="04 июля 2017">
         </p>
-        <p class="interested in-item">
-          <label="number of people-adults">Взрослые:</label>
+        <p class="interested-item">
+          <label class="number of people-adults">Взрослые:</label>
           <button class="button" type="submit">-</button>
           <input type="number">
           <button class="button" type="submit">+</button>
-          <label="number of people-children">Дети:</label>
+          <label class="number of people-children">Дети:</label>
           <button class="button" type="submit">-</button>
           <input type="number">
           <button class="button" type="submit">+</button>
         </p>
         <button class="button" type="submit">Найти</button>
-    </section>
     </section>
   </main>
   <footer class="main-footer">
@@ -121,7 +120,8 @@
         <li>
           <a class="social-button" href="#">Ютуб</a>
         </li>
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy">
+        <li>
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy">
         </li>
       </ul>
     </section>
