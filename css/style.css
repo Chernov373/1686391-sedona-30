@@ -10,6 +10,7 @@
     --backgrouund-color-light-blue: #81b3d2;
     --ultra-white: #EEEEEE;
     --light-grey: #766357;
+    --light-gray: #a9a9a9;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     line-height: 21px;
     font-weight: 700;
     color: var(--basic-white);
-    background-color: var(--basic-blac);
+    background-color: var(--basic-white);
     background-image: url("../img/mountain-view.jpg");
     text-transform: uppercase;
     background-position: top center;
@@ -74,12 +75,11 @@ img{
     background-image:url("img/view-of-the-building.jpg");
 
   }
-  .dignities-list h3  {
+  .dignities-list h3 {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
     color:#000000;
-    background-color:#81b3d2;
     background-position: 40 780;
   }
   .dignities-item p{
@@ -87,6 +87,9 @@ img{
     line-height: 21px;
     font-weight: regular;
     color:#333333;
+  }
+  .dignities-item.blue{
+    background-color: #81b3d2;
   }
   .dignities-list {
     font-size: 21px;
@@ -98,6 +101,8 @@ img{
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
+    color:#333333;
+    background-color:#ffffff;
   }
   .advantages-item h3{
     font-size: 21px;
@@ -109,6 +114,9 @@ img{
     font-size: 14px;
     line-height: 21px;
     font-weight: regular;
+  }
+  .advantages-item.white{
+    background-color: #ffffff;
   }
   /* contacts */
   .contacts-phohe {
@@ -124,19 +132,83 @@ img{
   }
   .footer-contacts a{
     color:var(--basic-white);
-    text-decoration: underline;
+    text-decoration: none;}
+  .footer-contacts a:hover,
+  .footer-contacts a:focus {
+    text-decoration:none;
   }
-  .interested  input{
-    font: PT sans;
-    background-color: transparent;
-    border: 2px solid var(--basic --basic-white);
+  .footer-social{
+    text-align: center;
   }
-  .interested  p{
+  .footer-social ul{
+    list-style-type:none;
+  }
+  .footer-social h2{
     font-size: 14px;
+  }
+  .social-button{
+    color:inherit;
+  }
+  .social-button:hover,
+  .social-button:hover:focus{
+    background-color:var(--basic-white)}
+    .footer-copyright .button:hover,
+    .footer-copyright .button:focus{
+      color:var(--basic-black);
+      background-color:var(--basic-white);
+    }
+  .interested  input{
+    font-family: 'PT Sans', Arial, sans-serif;
+    background-color: transparent;
+    border: 2px solid var(--basic-white);
+    font-weight: bold;
+    text-transform:uppercase;
+    background-color: #f2f2f2;
+  }
+  .interested p{
+    font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color:#000000;
   }
 interested  input:focus{
   border-color: #000000;
+}
+.interested.h2{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.intersted-form{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color:#ffffff;
+  background-color:#ffffff;
+}
+.interested-arrival.interested-date.interested-item{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color:#000000;
+}
+.number-of-people-adults.number-of-people-children{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+.button-submit{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color:#81b3d2;
+  text-transform: uppercase;
+}
+.button-search{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color:var(--light-grey);
+  text-transform: uppercase;
 }
