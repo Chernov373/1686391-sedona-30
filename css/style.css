@@ -1,7 +1,8 @@
 /* Variables*/
+
 :root {
-    --basic-black:#000000;
-    --basic-white:#ffffff;
+    --basic-black: #000000;
+    --basic-white: #ffffff;
     --dark-grey: #3b3a3a;
     --basic-blue: #23a9e1;
     --blue: #81B3D3;
@@ -11,6 +12,7 @@
     --ultra-white: #EEEEEE;
     --light-grey: #766357;
     --light-gray: #a9a9a9;
+    --brown: #503E33;
 }
 
 .page-body {
@@ -21,198 +23,292 @@
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
-    color: var(--basic-white);
+    color: #EEEEEE;
     background-color: var(--basic-white);
     background-image: url("../img/mountain-view.jpg");
     text-transform: uppercase;
     background-position: top center;
     background-repeat: no-repeat;
-
 }
-a{
+
+a {
     text-decoration: none;
 }
-img{
+
+img {
     max-width: 100%;
     height: auto;
 }
-.inner-page.main-header{
-  background-color: #000000;
-  background-image:url("../img/background.jpg");
+
+.inner-page.main-header {
+    background-color: #000000;
+    background-image: url("../img/background.jpg");
 }
-.main-navigation{
+
+.main-navigation {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
-    color:#000000;
+    color: #000000;
     background-color: #ffffff;
 }
-.site-navigation{
+
+.site-navigation {
     list-style: none;
 }
+
 .site-navigation-current a:not([href]) {
     background-color: var(--basic-black);
-  }
-  
-  /* User navigation */
-  
-  
-  .site-navigation a,
-  .user-navigation a {
-    color: var(--basic-black);
-  }
-  
-  .site-navigation a:hover,
-  .site-navigation a:focus,
-  .user-navigation a:hover,
-  .user-navigation a:focus {
-    background-color: var(--basic-extra-dark);
-  }
-  .dignities-list {
-    list-style: none;
-  }
-  .dignities-item h3{
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color:#ffffff;
-    background-image:url("img/view-of-the-building.jpg");
+}
 
-  }
-  .dignities-list h3 {
+.p {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+    color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: var(--basic-extra-dark);
+}
+
+.dignities-list {
+    list-style: none;
+}
+
+.dignities-item h3 {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-    color:#000000;
-    background-position: 40 780;
-  }
-  .dignities-item p{
+    color: #ffffff;
+    background-image: url("img/view-of-the-building.jpg");
+}
+
+.benefit-list-header h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    background-position: center;
+}
+
+.benefit-list-header p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    background-position: center;
+}
+
+.dignities-list h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #000000;
+    background-position: 40px 780px;
+}
+
+.dignities-item p {
     font-size: 14px;
     line-height: 21px;
-    font-weight: regular;
-    color:#333333;
-  }
-  .dignities-item.blue{
+    font-weight: 400;
+    color: #333333;
+}
+
+.dignities-item.blue h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
     background-color: #81b3d2;
-  }
-  .dignities-list {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color:var(--basic-black);
-  }
-  .advantages-list{
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color:#333333;
-    background-color:#ffffff;
-  }
-  .advantages-item h3{
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color:var(--basic-black);
-  }
-  .advantages-item p{
+}
+
+.dignities-item.blue p {
     font-size: 14px;
     line-height: 21px;
-    font-weight: regular;
-  }
-  .advantages-item.white{
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.dignities-list {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
+.advantages-list {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #333333;
     background-color: #ffffff;
-  }
-  /* contacts */
-  .contacts-phohe {
-    color:inherit;
-  }
-  /*main footer*/
-  .main-footer{
-    color:var(--basic-white);
+}
+
+.advantages-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
+.advantages-item p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.advantages-item.white h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.advantages-item.white p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+
+/* contacts */
+
+.contacts-phohe {
+    color: inherit;
+}
+
+
+/*main footer*/
+
+.main-footer {
+    color: var(--basic-white);
     background-color: var(--basic-black);
     background-image: url(img/logo-htmlacademy.svg);
     background-position: 0 0;
     background-repeat: repeat;
-  }
-  .footer-contacts a{
-    color:var(--basic-white);
-    text-decoration: none;}
-  .footer-contacts a:hover,
-  .footer-contacts a:focus {
-    text-decoration:none;
-  }
-  .footer-social{
+}
+
+.footer-contacts a {
+    color: var(--basic-white);
+    text-decoration: none;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: none;
+}
+
+.footer-social {
     text-align: center;
-  }
-  .footer-social ul{
-    list-style-type:none;
-  }
-  .footer-social h2{
+}
+
+.footer-social ul {
+    list-style-type: none;
+}
+
+.footer-social h2 {
     font-size: 14px;
-  }
-  .social-button{
-    color:inherit;
-  }
-  .social-button:hover,
-  .social-button:hover:focus{
-    background-color:var(--basic-white)}
-    .footer-copyright .button:hover,
-    .footer-copyright .button:focus{
-      color:var(--basic-black);
-      background-color:var(--basic-white);
-    }
-  .interested  input{
+}
+
+.social-button {
+    color: inherit;
+}
+
+.social-button:hover,
+.social-button:hover:focus {
+    background-color: var(--basic-white)
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.interested input {
     font-family: 'PT Sans', Arial, sans-serif;
     background-color: transparent;
     border: 2px solid var(--basic-white);
     font-weight: bold;
-    text-transform:uppercase;
+    text-transform: uppercase;
     background-color: #f2f2f2;
-  }
-  .interested p{
+}
+
+interested input:focus {
+    border-color: #000000;
+}
+
+.interested h2 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.intersted-form {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.interested-arrival.date {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.button-interested-of-departure.date {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.number-of-people-adults .number-of-people-children {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.button-search {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    color:#000000;
-  }
-interested  input:focus{
-  border-color: #000000;
+    color: #ffffff;
+    background-color: var(--light-grey);
+    text-transform: uppercase;
 }
-.interested.h2{
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: bold;
+
+.button-submit {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    background-color: #81b3d2;
+    text-transform: uppercase;
 }
-.intersted-form{
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color:#ffffff;
-  background-color:#ffffff;
-}
-.interested-arrival.interested-date.interested-item{
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  color:#000000;
-}
-.number-of-people-adults.number-of-people-children{
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #000000;
-}
-.button-submit{
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  background-color:#81b3d2;
-  text-transform: uppercase;
-}
-.button-search{
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  background-color:var(--light-grey);
-  text-transform: uppercase;
+
+.button:hover,
+.button:focus,
+.button:active {
+    color: #503E33;
 }
