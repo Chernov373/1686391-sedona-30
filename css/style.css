@@ -3,6 +3,7 @@
 :root {
     --basic-black: #000000;
     --basic-white: #ffffff;
+    --dark-white: #f2f2f2;
     --dark-grey: #3b3a3a;
     --basic-blue: #23a9e1;
     --blue: #81B3D3;
@@ -13,6 +14,7 @@
     --light-grey: #766357;
     --light-gray: #a9a9a9;
     --brown: #503E33;
+    --special-dark: #231F20;
 }
 
 .page-body {
@@ -197,15 +199,15 @@ img {
 /*main footer*/
 
 .main-footer {
-    color: var(--basic-white);
-    background-color: var(--basic-black);
+    color: var(--basic-black);
+    background-color: var(--basic-white);
     background-image: url(img/logo-htmlacademy.svg);
     background-position: 0 0;
     background-repeat: repeat;
 }
 
 .footer-contacts a {
-    color: var(--basic-white);
+    color: var(--basic-black);
     text-decoration: none;
 }
 
@@ -227,7 +229,8 @@ img {
 }
 
 .social-button {
-    color: inherit;
+    color: var(--basic-white);
+    background-color: var(--backgrouund-color-light-blue);
 }
 
 .social-button:hover,
@@ -237,7 +240,7 @@ img {
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
-    color: var(--basic-black);
+    color: var(--special-dark);
     background-color: var(--basic-white);
 }
 
@@ -261,6 +264,13 @@ interested input:focus {
     color: #000000;
 }
 
+.interested p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
 .intersted-form {
     font-size: 14px;
     line-height: 26px;
@@ -274,13 +284,16 @@ interested input:focus {
     line-height: 26px;
     font-weight: bold;
     color: #000000;
+    background-color: var(--dark-white);
+    background-position: 523 2224;
 }
 
 .button-interested-of-departure.date {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    color: #000000;
+    color: var(--basic-black);
+    background-position: 523 2291;
 }
 
 .number-of-people-adults .number-of-people-children {
@@ -303,6 +316,7 @@ interested input:focus {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    color: var(--basic-white);
     background-color: #81b3d2;
     text-transform: uppercase;
 }
