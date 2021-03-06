@@ -3,18 +3,20 @@
 :root {
     --basic-black: #000000;
     --basic-white: #ffffff;
-    --dark-white: #f2f2f2;
+    --dark-white: #F2F2F2;
     --dark-grey: #3b3a3a;
     --basic-blue: #23a9e1;
     --blue: #81B3D3;
     --carrot: #DC6243;
     --grey: #333333;
-    --backgrouund-color-light-blue: #81b3d2;
+    --light-blue: #81B3D2;
     --ultra-white: #EEEEEE;
+    --light-gray: #A9A9A9;
     --light-grey: #766357;
-    --light-gray: #a9a9a9;
+    --light-brown: #604E43;
     --brown: #503E33;
     --special-dark: #231F20;
+    --mercury: #EBEBEB;
 }
 
 .page-body {
@@ -25,7 +27,7 @@
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
-    color: #EEEEEE;
+    color: var(--basic-white);
     background-color: var(--basic-white);
     background-image: url("../img/mountain-view.jpg");
     text-transform: uppercase;
@@ -43,7 +45,7 @@ img {
 }
 
 .inner-page.main-header {
-    background-color: #000000;
+    background-color: var(--basic-black);
     background-image: url("../img/background.jpg");
 }
 
@@ -51,8 +53,8 @@ img {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
 }
 
 .site-navigation {
@@ -67,7 +69,7 @@ img {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    color: #000000;
+    color: var(--basic-black);
 }
 
 
@@ -93,7 +95,7 @@ img {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--basic-white);
     background-image: url("img/view-of-the-building.jpg");
 }
 
@@ -101,7 +103,7 @@ img {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    color: #000000;
+    color: var(--basic-black);
     background-position: center;
 }
 
@@ -109,7 +111,7 @@ img {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
-    color: #333333;
+    color: var(--grey);
     background-position: center;
 }
 
@@ -117,7 +119,7 @@ img {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-    color: #000000;
+    color: var(--basic-black);
     background-position: 40px 780px;
 }
 
@@ -125,23 +127,27 @@ img {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    color: #333333;
+    color: var(--grey);
 }
 
 .dignities-item.blue h3 {
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
-    color: #ffffff;
-    background-color: #81b3d2;
+    color: var(--basic-white);
+    background-color: var(--light-blue);
 }
 
 .dignities-item.blue p {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    color: #ffffff;
-    background-color: #81b3d2;
+    color: var(--basic-white);
+    background-color: var(--light-blue);
+}
+
+.dignities-item.blue {
+    background-color: var(--light-blue);
 }
 
 .dignities-list {
@@ -155,8 +161,8 @@ img {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-    color: #333333;
-    background-color: #ffffff;
+    color: var(--grey);
+    background-color: var(--basic-white);
 }
 
 .advantages-item h3 {
@@ -176,16 +182,16 @@ img {
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
 }
 
 .advantages-item.white p {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    color: #333333;
-    background-color: #ffffff;
+    color: var(--grey);
+    background-color: var(--basic-white);
 }
 
 
@@ -230,11 +236,14 @@ img {
 
 .social-button {
     color: var(--basic-white);
-    background-color: var(--backgrouund-color-light-blue);
+    background-color: var(--light-blue);
 }
 
-.social-button:hover,
-.social-button:hover:focus {
+.social-button:hover {
+    color: var(--light-blue);
+}
+
+.social-button:active {
     background-color: var(--basic-white)
 }
 
@@ -250,18 +259,18 @@ img {
     border: 2px solid var(--basic-white);
     font-weight: bold;
     text-transform: uppercase;
-    background-color: #f2f2f2;
+    background-color: var(--dark-white);
 }
 
 interested input:focus {
-    border-color: #000000;
+    border-color: var(--basic-black);
 }
 
 .interested h2 {
     font-size: 30px;
     line-height: 24px;
     font-weight: bold;
-    color: #000000;
+    color: var(--basic-black);
 }
 
 .interested p {
@@ -275,41 +284,80 @@ interested input:focus {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.label.interested-arrival.date {
+    background-color: var(--basic-white);
 }
 
 .interested-arrival.date {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    color: #000000;
+    color: var(--basic-black);
     background-color: var(--dark-white);
-    background-position: 523 2224;
 }
 
-.button-interested-of-departure.date {
+.interested-arrival.date:hover {
+    background-color: var(--mercury);
+}
+
+.interested-arrival.date:focus {
+    background-color: var(--basic-white);
+}
+
+.interested-date.of.departure {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
     color: var(--basic-black);
-    background-position: 523 2291;
+    background-color: #F2F2F2;
+}
+
+.interested-date.of.departure:hover {
+    background-color: var(--mercury);
+}
+
+.interested-date.of.departure:focus {
+    background-color: var(--basic-white);
 }
 
 .number-of-people-adults .number-of-people-children {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    color: #000000;
+    color: var(--basic-black);
 }
 
 .button-search {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--basic-white);
     background-color: var(--light-grey);
     text-transform: uppercase;
+}
+
+.button-search:hover {
+    background-color: var(--light-brown);
+}
+
+.button-search:active {
+    color: rgba(128, 177, 206, 0.3);
+}
+
+.button-minus.button-plus {
+    background-color: var(--light-gray);
+}
+
+.button-minus.button-plus:hover {
+    background-color: var(--basic-black);
+}
+
+.button.minus:focus {
+    background-color: var(--light-blue);
 }
 
 .button-submit {
@@ -317,12 +365,20 @@ interested input:focus {
     line-height: 26px;
     font-weight: bold;
     color: var(--basic-white);
-    background-color: #81b3d2;
+    background-color: var(--light-blue);
     text-transform: uppercase;
+}
+
+.button-submit:hover {
+    background-color: #669EC0;
+}
+
+.button-submit:active {
+    color: rgba(84, 150, 189, 0, 3);
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-    color: #503E33;
+    color: var(--brown);
 }
