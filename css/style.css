@@ -71,7 +71,7 @@
             font-size: 21px;
             line-height: 26px;
             font-weight: bold;
-            color: var(--basic-black);
+            color: var(--basic-white);
         }
         /* User navigation */
         
@@ -231,7 +231,6 @@
         }
         
         .social-button {
-            display: grid;
             color: var(--basic-white);
             background-color: var(--light-blue);
         }
@@ -256,7 +255,7 @@
         }
         
         .social-button:active {
-            background-color: var(--basic-white)
+            background-color: var(--basic-white);
         }
         
         .footer-copyright .button:hover,
@@ -304,12 +303,13 @@
             background-color: var(--basic-white);
         }
         
-        .interested-arrival.date {
+        .input.interested-arrival.date {
             font-size: 14px;
             line-height: 26px;
             font-weight: bold;
             color: var(--basic-black);
             background-color: var(--dark-white);
+            background-image: url("img/calendar.svg");
         }
         
         .interested-arrival.date:hover {
@@ -320,12 +320,12 @@
             background-color: var(--basic-white);
         }
         
-        .interested-date.of.departure {
+        .label.interested-date.of.departure {
             font-size: 14px;
             line-height: 26px;
             font-weight: bold;
             color: var(--basic-black);
-            background-color: #F2F2F2;
+            background-color: var(--basic-white);
         }
         
         .interested-date.of.departure:hover {
@@ -358,6 +358,10 @@
         
         .button-search:active {
             color: rgba(128, 177, 206, 0.3);
+        }
+        
+        .input-interested-arrival.date {
+            height: 50px;
         }
         
         .button-calendar {
