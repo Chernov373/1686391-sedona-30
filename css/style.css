@@ -1,384 +1,422 @@
-/* Variables*/
-
-:root {
-    --basic-black: #000000;
-    --basic-white: #ffffff;
-    --dark-white: #F2F2F2;
-    --dark-grey: #3b3a3a;
-    --basic-blue: #23a9e1;
-    --blue: #81B3D3;
-    --carrot: #DC6243;
-    --grey: #333333;
-    --light-blue: #81B3D2;
-    --ultra-white: #EEEEEE;
-    --light-gray: #A9A9A9;
-    --light-grey: #766357;
-    --light-brown: #604E43;
-    --brown: #503E33;
-    --special-dark: #231F20;
-    --mercury: #EBEBEB;
-}
-
-.page-body {
-    min-width: 1200px;
-    padding: 0;
-    margin: 0;
-    font-family: 'PT Sans', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 700;
-    color: var(--basic-white);
-    background-color: var(--basic-white);
-    background-image: url("../img/mountain-view.jpg");
-    text-transform: uppercase;
-    background-position: top center;
-    background-repeat: no-repeat;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.inner-page.main-header {
-    background-color: var(--basic-black);
-    background-image: url("../img/background.jpg");
-}
-
-.main-navigation {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-    color: var(--basic-black);
-    background-color: var(--basic-white);
-}
-
-.site-navigation {
-    list-style: none;
-}
-
-.site-navigation-current a:not([href]) {
-    background-color: var(--basic-black);
-}
-
-.p {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-black);
-}
-
-
-/* User navigation */
-
-.site-navigation a,
-.user-navigation a {
-    color: var(--basic-black);
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-    background-color: var(--basic-extra-dark);
-}
-
-.dignities-list {
-    list-style: none;
-}
-
-.dignities-item h3 {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color: var(--basic-white);
-    background-image: url("img/view-of-the-building.jpg");
-}
-
-.benefit-list-header h3 {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-black);
-    background-position: center;
-}
-
-.benefit-list-header p {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 400;
-    color: var(--grey);
-    background-position: center;
-}
-
-.dignities-list h3 {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color: var(--basic-black);
-    background-position: 40px 780px;
-}
-
-.dignities-item p {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: var(--grey);
-}
-
-.dignities-item.blue h3 {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    color: var(--basic-white);
-    background-color: var(--light-blue);
-}
-
-.dignities-item.blue p {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: var(--basic-white);
-    background-color: var(--light-blue);
-}
-
-.dignities-item.blue {
-    background-color: var(--light-blue);
-}
-
-.dignities-list {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color: var(--basic-black);
-}
-
-.advantages-list {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color: var(--grey);
-    background-color: var(--basic-white);
-}
-
-.advantages-item h3 {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: bold;
-    color: var(--basic-black);
-}
-
-.advantages-item p {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-}
-
-.advantages-item.white h3 {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    color: var(--basic-black);
-    background-color: var(--basic-white);
-}
-
-.advantages-item.white p {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: var(--grey);
-    background-color: var(--basic-white);
-}
-
-
-/* contacts */
-
-.contacts-phohe {
-    color: inherit;
-}
-
-
-/*main footer*/
-
-.main-footer {
-    color: var(--basic-black);
-    background-color: var(--basic-white);
-    background-image: url(img/logo-htmlacademy.svg);
-    background-position: 0 0;
-    background-repeat: repeat;
-}
-
-.footer-contacts a {
-    color: var(--basic-black);
-    text-decoration: none;
-}
-
-.footer-contacts a:hover,
-.footer-contacts a:focus {
-    text-decoration: none;
-}
-
-.footer-social {
-    text-align: center;
-}
-
-.footer-social ul {
-    list-style-type: none;
-}
-
-.footer-social h2 {
-    font-size: 14px;
-}
-
-.social-button {
-    color: var(--basic-white);
-    background-color: var(--light-blue);
-}
-
-.social-button:hover {
-    color: var(--light-blue);
-}
-
-.social-button:active {
-    background-color: var(--basic-white)
-}
-
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
-    color: var(--special-dark);
-    background-color: var(--basic-white);
-}
-
-.interested input {
-    font-family: 'PT Sans', Arial, sans-serif;
-    background-color: transparent;
-    border: 2px solid var(--basic-white);
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: var(--dark-white);
-}
-
-interested input:focus {
-    border-color: var(--basic-black);
-}
-
-.interested h2 {
-    font-size: 30px;
-    line-height: 24px;
-    font-weight: bold;
-    color: var(--basic-black);
-}
-
-.interested p {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: bold;
-    color: var(--basic-black);
-}
-
-.intersted-form {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-black);
-    background-color: var(--basic-white);
-}
-
-.label.interested-arrival.date {
-    background-color: var(--basic-white);
-}
-
-.interested-arrival.date {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-black);
-    background-color: var(--dark-white);
-}
-
-.interested-arrival.date:hover {
-    background-color: var(--mercury);
-}
-
-.interested-arrival.date:focus {
-    background-color: var(--basic-white);
-}
-
-.interested-date.of.departure {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-black);
-    background-color: #F2F2F2;
-}
-
-.interested-date.of.departure:hover {
-    background-color: var(--mercury);
-}
-
-.interested-date.of.departure:focus {
-    background-color: var(--basic-white);
-}
-
-.number-of-people-adults .number-of-people-children {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-black);
-}
-
-.button-search {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-white);
-    background-color: var(--light-grey);
-    text-transform: uppercase;
-}
-
-.button-search:hover {
-    background-color: var(--light-brown);
-}
-
-.button-search:active {
-    color: rgba(128, 177, 206, 0.3);
-}
-
-.button-minus.button-plus {
-    background-color: var(--light-gray);
-}
-
-.button-minus.button-plus:hover {
-    background-color: var(--basic-black);
-}
-
-.button.minus:focus {
-    background-color: var(--light-blue);
-}
-
-.button-submit {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    color: var(--basic-white);
-    background-color: var(--light-blue);
-    text-transform: uppercase;
-}
-
-.button-submit:hover {
-    background-color: #669EC0;
-}
-
-.button-submit:active {
-    color: rgba(84, 150, 189, 0, 3);
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-    color: var(--brown);
-}
+        /* Variables*/
+        
+         :root {
+            --basic-black: #000000;
+            --basic-white: #ffffff;
+            --dark-white: #F2F2F2;
+            --dark-grey: #3b3a3a;
+            --basic-blue: #23a9e1;
+            --blue: #81B3D3;
+            --carrot: #DC6243;
+            --grey: #333333;
+            --light-blue: #81B3D2;
+            --ultra-white: #EEEEEE;
+            --light-gray: #A9A9A9;
+            --light-grey: #766357;
+            --light-brown: #604E43;
+            --brown: #503E33;
+            --special-dark: #231F20;
+            --mercury: #EBEBEB;
+            --medium-blue: #669ec0;
+            --dark-blue: #5496BD;
+        }
+        
+        .page-body {
+            min-width: 1200px;
+            padding: 0;
+            margin: 0;
+            font-family: 'PT Sans', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 700;
+            color: var(--basic-white);
+            background-color: var(--basic-white);
+            background-image: url("../img/mountain-view.jpg");
+            text-transform: uppercase;
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .inner-page.main-header {
+            background-color: var(--basic-black);
+            background-image: url("../img/background.jpg");
+        }
+        
+        .main-navigation {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 700;
+            color: var(--basic-black);
+            background-color: var(--basic-white);
+        }
+        
+        .site-navigation {
+            list-style: none;
+        }
+        
+        .site-navigation-current a:not([href]) {
+            background-color: var(--basic-black);
+        }
+        
+        .p {
+            font-size: 21px;
+            line-height: 26px;
+            font-weight: bold;
+            color: var(--basic-black);
+        }
+        /* User navigation */
+        
+        .site-navigation a,
+        .user-navigation a {
+            color: var(--basic-black);
+        }
+        
+        .site-navigation a:hover,
+        .site-navigation a:focus,
+        .user-navigation a:hover,
+        .user-navigation a:focus {
+            background-color: var(--basic-extra-dark);
+        }
+        
+        .dignities-list {
+            list-style: none;
+        }
+        
+        .dignities-item h3 {
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: bold;
+            color: var(--basic-white);
+            background-image: url("img/view-of-the-building.jpg");
+        }
+        
+        .benefit-list-header h3 {
+            font-size: 21px;
+            line-height: 26px;
+            font-weight: bold;
+            color: var(--basic-black);
+            background-position: center;
+        }
+        
+        .benefit-list-header p {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            color: var(--grey);
+            background-position: center;
+        }
+        
+        .dignities-list h3 {
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: bold;
+            color: var(--basic-black);
+            background-position: 40px 780px;
+        }
+        
+        .dignities-item p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            color: var(--grey);
+        }
+        
+        .dignities-item.blue h3 {
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: 700;
+            color: var(--basic-white);
+            background-color: var(--light-blue);
+        }
+        
+        .dignities-item.blue p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            color: var(--basic-white);
+            background-color: var(--light-blue);
+        }
+        
+        .dignities-item.blue {
+            background-color: var(--light-blue);
+        }
+        
+        .dignities-list {
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: bold;
+            color: var(--basic-black);
+        }
+        
+        .advantages-list {
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: bold;
+            color: var(--grey);
+            background-color: var(--basic-white);
+        }
+        
+        .advantages-item h3 {
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: bold;
+            color: var(--basic-black);
+        }
+        
+        .advantages-item p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+        }
+        
+        .advantages-item.white h3 {
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: 700;
+            color: var(--basic-black);
+            background-color: var(--basic-white);
+        }
+        
+        .advantages-item.white p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            color: var(--grey);
+            background-color: var(--basic-white);
+        }
+        /* contacts */
+        
+        .contacts-phohe {
+            color: inherit;
+        }
+        /*main footer*/
+        
+        .main-footer {
+            color: var(--basic-black);
+            background-color: var(--basic-white);
+            background-image: url(img/logo-htmlacademy.svg);
+            background-position: 0 0;
+            background-repeat: repeat;
+        }
+        
+        .footer-contacts a {
+            color: var(--basic-black);
+            text-decoration: none;
+        }
+        
+        .footer-contacts a:hover,
+        .footer-contacts a:focus {
+            text-decoration: none;
+        }
+        
+        .footer-social {
+            text-align: center;
+        }
+        
+        .footer-social ul {
+            list-style-type: none;
+        }
+        
+        .footer-social h2 {
+            font-size: 14px;
+        }
+        
+        .social-button {
+            display: grid;
+            color: var(--basic-white);
+            background-color: var(--light-blue);
+        }
+        
+        .social-button twitter {
+            background-color: var(--light-blue);
+            background-position: 525px 36px;
+        }
+        
+        .social-button facebook {
+            background-color: var(--light-blue);
+            background-position: 577px 36px;
+        }
+        
+        .social-button youtube {
+            background-color: var(--light-blue);
+            background-position: 629px 36px;
+        }
+        
+        .social-button:hover {
+            color: var(--light-blue);
+        }
+        
+        .social-button:active {
+            background-color: var(--basic-white)
+        }
+        
+        .footer-copyright .button:hover,
+        .footer-copyright .button:focus {
+            color: var(--special-dark);
+            background-color: var(--basic-white);
+        }
+        
+        .interested input {
+            font-family: 'PT Sans', Arial, sans-serif;
+            background-color: transparent;
+            border: 2px solid var(--basic-white);
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: var(--dark-white);
+        }
+        
+        interested input:focus {
+            border-color: var(--basic-black);
+        }
+        
+        .interested h2 {
+            font-size: 30px;
+            line-height: 24px;
+            font-weight: bold;
+            color: var(--basic-black);
+        }
+        
+        .interested p {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: bold;
+            color: var(--basic-black);
+        }
+        
+        .intersted-form {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: bold;
+            color: var(--basic-black);
+            background-color: var(--basic-white);
+        }
+        
+        .label.interested-arrival.date {
+            background-color: var(--basic-white);
+        }
+        
+        .interested-arrival.date {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: bold;
+            color: var(--basic-black);
+            background-color: var(--dark-white);
+        }
+        
+        .interested-arrival.date:hover {
+            background-color: var(--mercury);
+        }
+        
+        .interested-arrival.date:focus {
+            background-color: var(--basic-white);
+        }
+        
+        .interested-date.of.departure {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: bold;
+            color: var(--basic-black);
+            background-color: #F2F2F2;
+        }
+        
+        .interested-date.of.departure:hover {
+            background-color: var(--mercury);
+        }
+        
+        .interested-date.of.departure:focus {
+            background-color: var(--basic-white);
+        }
+        
+        .number-of-people-adults .number-of-people-children {
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: bold;
+            color: var(--basic-black);
+        }
+        
+        .button-search {
+            font-size: 21px;
+            line-height: 26px;
+            font-weight: bold;
+            color: var(--basic-white);
+            background-color: var(--light-grey);
+            text-transform: uppercase;
+        }
+        
+        .button-search:hover {
+            background-color: var(--light-brown);
+        }
+        
+        .button-search:active {
+            color: rgba(128, 177, 206, 0.3);
+        }
+        
+        .button-calendar {
+            color: var(--light-gray);
+            background-color: var(--dark-white);
+        }
+        
+        .button-calendar:hover {
+            color: var(--basic-black);
+        }
+        
+        .button-calendar:active {
+            color: var(--light-blue);
+        }
+        
+        .button-minus {
+            color: var(--light-gray);
+            background-color: var(--dark-white);
+        }
+        
+        .button-plus {
+            color: var(--light-gray);
+            background-color: var(--dark-white);
+        }
+        
+        .button-minus:hover {
+            color: var(--basic-black);
+            background-color: var(--dark-white);
+        }
+        
+        .button-plus:hover {
+            color: var(--basic-black);
+            background-color: var(--dark-white);
+        }
+        
+        .button-minus:active {
+            color: var(--light-blue);
+            background-color: var(--dark-white);
+        }
+        
+        .button-plus:active {
+            color: var(--light-blue);
+            background-color: var(--dark-white);
+        }
+        
+        .button-submit {
+            font-size: 21px;
+            line-height: 26px;
+            font-weight: bold;
+            color: var(--basic-white);
+            background-color: var(--light-blue);
+            text-transform: uppercase;
+        }
+        
+        .button-submit:hover {
+            background-color: var(--medium-blue);
+        }
+        
+        .button-submit:active {
+            color: rgba(255, 255, 255, 0.3);
+            background-color: var(--dark-blue);
+        }
