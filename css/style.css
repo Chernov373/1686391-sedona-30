@@ -309,7 +309,6 @@
             font-weight: bold;
             color: var(--basic-black);
             background-color: var(--dark-white);
-            background-image: url("img/calendar.svg");
         }
         
         .interested-arrival.date:hover {
