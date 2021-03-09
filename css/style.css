@@ -61,7 +61,7 @@
         .main-navigation {
             font-size: 14px;
             line-height: 26px;
-            font-weight: 700;
+            font-weight: bold;
             color: var(--basic-black);
             background-color: var(--basic-white);
         }
@@ -74,7 +74,7 @@
             background-color: var(--basic-black);
         }
         
-        .p {
+        p {
             font-size: 21px;
             line-height: 26px;
             font-weight: bold;
@@ -130,14 +130,19 @@
             background-position: 40px 780px;
         }
         
+        .dignities-item {
+            background-color: var(--ultra-white);
+        }
+        
         .dignities-item p {
             font-size: 14px;
             line-height: 21px;
             font-weight: 400;
             color: var(--grey);
+            background-color: var(--ultra-white);
         }
         
-        .dignities-item.blue h3 {
+        .dignities-item-blue h3 {
             font-size: 21px;
             line-height: 21px;
             font-weight: 700;
@@ -145,7 +150,7 @@
             background-color: var(--light-blue);
         }
         
-        .dignities-item.blue p {
+        .dignities-item-blue p {
             font-size: 14px;
             line-height: 21px;
             font-weight: 400;
@@ -153,7 +158,7 @@
             background-color: var(--light-blue);
         }
         
-        .dignities-item.blue {
+        .dignities-item-blue {
             background-color: var(--light-blue);
         }
         
@@ -210,7 +215,6 @@
         .main-footer {
             color: var(--basic-black);
             background-color: var(--basic-white);
-            background-image: url(img/logo-htmlacademy.svg);
             background-position: 0 0;
             background-repeat: repeat;
         }
@@ -229,32 +233,12 @@
             text-align: center;
         }
         
-        .footer-social ul {
+        .footer-social.ul {
             list-style-type: none;
         }
         
-        .footer-social h2 {
+        .footer-social.h2 {
             font-size: 14px;
-        }
-        
-        .social-button {
-            color: var(--basic-white);
-            background-color: var(--light-blue);
-        }
-        
-        .social-button twitter {
-            background-color: var(--light-blue);
-            background-position: 525px 36px;
-        }
-        
-        .social-button facebook {
-            background-color: var(--light-blue);
-            background-position: 577px 36px;
-        }
-        
-        .social-button youtube {
-            background-color: var(--light-blue);
-            background-position: 629px 36px;
         }
         
         .social-button:hover {
@@ -280,7 +264,7 @@
             background-color: var(--dark-white);
         }
         
-        interested input:focus {
+        .interested input:focus {
             border-color: var(--basic-black);
         }
         
@@ -306,11 +290,11 @@
             background-color: var(--basic-white);
         }
         
-        .label.interested-arrival.date {
+        label.interested-arrival.date {
             background-color: var(--basic-white);
         }
         
-        .input.interested-arrival.date {
+        input.interested-arrival.date {
             font-size: 14px;
             line-height: 26px;
             font-weight: bold;
@@ -318,15 +302,15 @@
             background-color: var(--dark-white);
         }
         
-        .interested-arrival.date:hover {
+        .interested-arrival-date:hover {
             background-color: var(--mercury);
         }
         
-        .interested-arrival.date:focus {
+        .interested-arrival-date:focus {
             background-color: var(--basic-white);
         }
         
-        .label.interested-date.of.departure {
+        label.interested-date-of-departure {
             font-size: 14px;
             line-height: 26px;
             font-weight: bold;
@@ -334,11 +318,11 @@
             background-color: var(--basic-white);
         }
         
-        .interested-date.of.departure:hover {
+        .interested-date-of-departure:hover {
             background-color: var(--mercury);
         }
         
-        .interested-date.of.departure:focus {
+        .interested-date-of-departure:focus {
             background-color: var(--basic-white);
         }
         
@@ -366,7 +350,7 @@
             color: rgba(128, 177, 206, 0.3);
         }
         
-        .input-interested-arrival.date {
+        input-interested-arrival.date {
             height: 50px;
         }
         
