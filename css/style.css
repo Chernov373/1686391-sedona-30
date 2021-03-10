@@ -190,7 +190,7 @@
             font-weight: 400;
         }
         
-        .advantages-item.white h3 {
+        .advantages-item-white h3 {
             font-size: 21px;
             line-height: 21px;
             font-weight: 700;
@@ -198,7 +198,7 @@
             background-color: var(--basic-white);
         }
         
-        .advantages-item.white p {
+        .advantages-item-white p {
             font-size: 14px;
             line-height: 21px;
             font-weight: 400;
@@ -233,11 +233,11 @@
             text-align: center;
         }
         
-        .footer-social.ul {
+        .footer-social ul {
             list-style-type: none;
         }
         
-        .footer-social.h2 {
+        .footer-social h2 {
             font-size: 14px;
         }
         
@@ -290,11 +290,11 @@
             background-color: var(--basic-white);
         }
         
-        label.interested-arrival.date {
+        label.interested-arrival-date {
             background-color: var(--basic-white);
         }
         
-        input.interested-arrival.date {
+        input.interested-arrival-date {
             font-size: 14px;
             line-height: 26px;
             font-weight: bold;
@@ -310,7 +310,7 @@
             background-color: var(--basic-white);
         }
         
-        label.interested-date-of-departure {
+        label.interested-date-departure {
             font-size: 14px;
             line-height: 26px;
             font-weight: bold;
@@ -318,15 +318,15 @@
             background-color: var(--basic-white);
         }
         
-        .interested-date-of-departure:hover {
+        .interested-date-departure:hover {
             background-color: var(--mercury);
         }
         
-        .interested-date-of-departure:focus {
+        .interested-date-departure:focus {
             background-color: var(--basic-white);
         }
         
-        .number-of-people-adults .number-of-people-children {
+        .number-people-adults .number-people-children {
             font-size: 14px;
             line-height: 26px;
             font-weight: bold;
