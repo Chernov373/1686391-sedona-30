@@ -74,7 +74,7 @@
             background-color: var(--basic-black);
         }
         
-        p {
+        .interested-item {
             font-size: 21px;
             line-height: 26px;
             font-weight: bold;
@@ -215,8 +215,6 @@
         .main-footer {
             color: var(--basic-black);
             background-color: var(--basic-white);
-            background-position: 0 0;
-            background-repeat: repeat;
         }
         
         .footer-contacts a {
@@ -290,11 +288,11 @@
             background-color: var(--basic-white);
         }
         
-        label.interested-arrival-date {
+        .interested-arrival-date {
             background-color: var(--basic-white);
         }
         
-        input.interested-arrival-date {
+        .interested-arrival-date {
             font-size: 14px;
             line-height: 26px;
             font-weight: bold;
@@ -310,7 +308,7 @@
             background-color: var(--basic-white);
         }
         
-        label.interested-date-departure {
+        .interested-date-departure {
             font-size: 14px;
             line-height: 26px;
             font-weight: bold;
@@ -350,7 +348,7 @@
             color: rgba(128, 177, 206, 0.3);
         }
         
-        input-interested-arrival.date {
+        .interested-arrival.date {
             height: 50px;
         }
         
