@@ -50,7 +50,8 @@
         height: auto;
     }
     
-    .inner-page.main-header {
+    .main-header {
+        color: var(--basic-black);
         background-color: var(--basic-white);
     }
     
@@ -66,7 +67,7 @@
         background-color: var(--basic-white);
     }
     
-    .site-navigation {
+    .site-navigation a {
         list-style: none;
     }
     
@@ -75,13 +76,23 @@
     }
     
     .site-navigation.information:hover {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: bold;
+        text-transform: uppercase;
         color: var(--light-blue);
     }
     
-    .li.information:focus {
+    li.information:hover {
+        color: var(--light-blue);
+    }
+    
+    li.information:focus {
         color: var(--basic-black);
         opacity: 0.3;
     }
+    
+    li.information:active {}
     
     .site-navigation.information:focus {}
     
