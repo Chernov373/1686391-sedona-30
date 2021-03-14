@@ -21,10 +21,10 @@
                 <img src="img/logo.svg" width="138" height="70" alt="Логотип городка Седона">
             </a>
             <ul class="site-navigation">
-                <li><a class="information" href="blank.html">Информация</a></li>
-                <li><a href="blank.html">Фото и видео</a></li>
-                <li><a href="blank.html">Карта штата</a></li>
-                <li class="hotel"><a href="catalog.html">Гостиницы</a></li>
+                <li><a class="info" href="blank.html">Информация</a></li>
+                <li><a class="info" href="blank.html">Фото и видео</a></li>
+                <li><a class="info" href="blank.html">Карта штата</a></li>
+                <li><a class="info current" href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
@@ -36,13 +36,13 @@
         <form class="hotel-selection" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
                 <legend>ИНФРАСТУКТУРА:</legend>
-                <label><input type="checkbox" name="area" checked value="БАССЕЙН">БАССЕЙН</label>
-                <label><input type="checkbox" name="area" value="ПАРКОВКА">ПАРКОВКА</label>
-                <input type="checkbox" name="area" value="WI-FI">WI-FI</label>
+                <input class="filter-input-checkbox" type="checkbox" name="area" checked value="pool" disabled><label>бассейн</label>
+                <input class="filter-input-checkbox" type="checkbox" name="area" value="parking"><label>парковка</label>
+                <input class="filter-input-checkbox" type="checkbox" name="area" value="wi-fi"><label>WI-FI</label>
                 <legend>ТИП ЖИЛЬЯ:</legend>
-                <label><input type="checkbox" name="area" checked value="ГОСТИНИЦА">ГОСТИНИЦА</label>
-                <label><input type="checkbox" name="area" checked value="МОТЕЛЬ">МОТЕЛЬ</label>
-                <label><input type="checkbox" name="area" checked value="АПАРТАМЕНТЫ">АПАРТАМЕНТЫ</label>
+                <input class="filter-input-checkbox" type="checkbox" name="area" checked value="hotel"><label>гостиница</label>
+                <input class="filter-input-checkbox" type="checkbox" name="area" checked value="motel"><label>мотель</label>
+                <input class="filter-input-checkbox" type="checkbox" name="area" checked value="apartments"><label>апартаменты</label>
                 <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
                 <label><input type="text" value="от 0"></label>
                 <label><input type="text" value="до 5000"></label>
@@ -54,15 +54,20 @@
             <!--здесь будет форма-->
         </div>
         <section>
-            <p>Найдено: 3</p>
-            <ul>
-                <li>Сортировка</li>
-                <li><a href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По рейтингу</a></li>
+            <span class="found">Найдено: 3</span>
+            <ul class="site-sorting">
+                <span class="sorting">Сортировка:</span>
+                <li><a class="site-sorting__link" href="#">По цене</a></li>
+                <li><a class="site-sorting__link" href="#">По типу</a></li>
+                <li><a class="site-sorting__link" href="#">По рейтингу</a></li>
                 <li>
-                    <a href="#">Стрелочка один</a>
-                    <a href="#">Стрелочка два</a>
+                    <a><img class="up-arrow" svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+                        </svg>
+                    </a>
+                    <img class="down-arrow" svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 10L0 0H11" fill="#CACACA" />
+                    </svg>
                 </li>
             </ul>
             <div>
@@ -71,11 +76,26 @@
                     <h2>AMARA RESORT&SPA</h2>
                     <span class="types-real-estate">Гостиница</span>
                     <span>от 4000 р.</span>
-                    <button class="more-details" href="#">подробнее</button>
-                    <button><a href="#">забронировать</a></button>
+                    <button class="more-details" a href="#">подробнее</a></button>
+                    <button class="make-reservation" a href="#">забронировать</a></button>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        </svg>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                            </svg>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                                </svg>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                                    </svg>
+
                 </section>
+
             </div>
             <div>
+                <p class="rating">Рейтинг:8.5</p>
                 <img src="img/photo-of-the-hotel-desert-quail-inn.jpg" width="135" height="90" alt="Фото отеля Desert Quail inn">
                 <section class="hotels">
                     <h2>DESERT QUAIL INN</h2>
@@ -83,24 +103,37 @@
                     <span>от 3000 р.</span>
                     <button class="more-details" a href="#">подробнее</a></button>
                     <button class="make-reservation" a href="#">забронировать</button>
-                </section>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        </svg>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                            </svg>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                                </svg>
 
-                <p>
-                    <!-- здесь будет рейтинг-->
-                </p>
+                </section>
+                <p class="rating">Рейтинг:8.9</p>
                 <img src="img/photo-of-the-hotel-villas-at-poco-diablo.jpg" width="135" height="90" alt="Фото отеля Villas at Poco Diablo">
                 <section class="hotels">
                     <h2>VILLAS AT POCO DIABLO</h2>
                     <span class="types-real-estate">Апартаменты</span>
                     <span>от 2000 р.</span>
                     <button class="more-details" href="#">подробнее</a></button>
-                    <button><a href="#">забронировать</a></button>
+                    <button class="make-reservation" a href="#">забронировать</a></button>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                        </svg>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                            </svg>
+
+                    </svg>
+
             </div>
             <div>
-                <p>
-                    <!-- здесь будет рейтинг-->
-                </p>
-                <p>Рейтинг:9.2</p>
+                <p class="rating">Рейтинг:9.2</p>
                 </section>
             </div>
 
