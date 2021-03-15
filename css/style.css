@@ -153,9 +153,6 @@ img {
     color: var(--basic-black);
 }
 
-.up-arrow :active,
-.down-arrow:active {}
-
 .hotels h2 {
     font-size: 21px;
     line-height: 26px;
@@ -177,7 +174,7 @@ img {
 .hotels span {
     font-size: 14px;
     line-height: 21px;
-    font-weight: regular;
+    font-weight: 400;
     color: var(--grey);
     background-color: var(--basic-white);
     text-transform: uppercase;
@@ -189,7 +186,6 @@ img {
 .filter legend {
     font-size: 16px;
     line-height: 21px;
-    font-weight: ;
 }
 
 .input {
