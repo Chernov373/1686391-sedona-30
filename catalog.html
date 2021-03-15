@@ -33,23 +33,27 @@
         <section>
             <h2> фильтр для выбора гостиницы</h2>
         </section>
-        <form class="hotel-selection" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-                <legend>инфраструктура:</legend>
-                <input class="filter-input-checkbox" type="checkbox" name="area" checked value="pool" disabled><label>бассейн</label>
-                <input class="filter-input-checkbox" type="checkbox" name="area" value="parking"><label>парковка</label>
-                <input class="filter-input-checkbox" type="checkbox" name="area" value="wi-fi"><label>wi-fi</label>
-                <legend>тип жилья:</legend>
-                <input class="filter-input-checkbox" type="checkbox" name="area" checked value="hotel"><label>гостиница</label>
-                <input class="filter-input-checkbox" type="checkbox" name="area" checked value="motel"><label>мотель</label>
-                <input class="filter-input-checkbox" type="checkbox" name="area" checked value="apartments"><label>апартаменты</label>
-                <legend>стоимость в сутки (р):</legend>
-                <label><input type="text" value="от 0"></label>
-                <label><input type="text" value="до 5000"></label>
-            </fieldset>
-            <button type="submit">показать</button>
-        </form>
         <div>
+            <form class="hotel-selection" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>инфраструктура:</legend>
+                    <input class="filter-input-checkbox" type="checkbox" name="area" checked value="pool" disabled><label>бассейн</label>
+                    <input class="filter-input-checkbox" type="checkbox" name="area" value="parking"><label>парковка</label>
+                    <input class="filter-input-checkbox" type="checkbox" name="area" value="wi-fi"><label>wi-fi</label>
+                </fieldset>
+                <fieldset>
+                    <legend>тип жилья:</legend>
+                    <input class="filter-input-checkbox" type="checkbox" name="area" checked value="hotel"><label>гостиница</label>
+                    <input class="filter-input-checkbox" type="checkbox" name="area" checked value="motel"><label>мотель</label>
+                    <input class="filter-input-checkbox" type="checkbox" name="area" checked value="apartments"><label>апартаменты</label>
+                </fieldset>
+                <fieldset>
+                    <legend>стоимость в сутки (р):</legend>
+                    <label><input type="text" value="от 0"></label>
+                    <label><input type="text" value="до 5000"></label>
+                </fieldset>
+                <button type="submit">показать</button>
+            </form>
             <!--здесь будет форма-->
         </div>
         <span class="found">найдено: 3</span>
