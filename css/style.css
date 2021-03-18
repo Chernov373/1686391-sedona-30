@@ -25,7 +25,7 @@
 }
 
 .page-body {
-    min-width: 1200px;
+    max-width: 1200px;
     padding: 0;
     margin: 0;
     font-family: 'PT Sans', Arial, sans-serif;
@@ -368,7 +368,9 @@ img {
     line-height: 26px;
     font-weight: bold;
     color: var(--basic-black);
-    background-position: center;
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .benefit-list-header p {
@@ -376,7 +378,9 @@ img {
     line-height: 26px;
     font-weight: 400;
     color: var(--grey);
-    background-position: center;
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dignities-item {}
